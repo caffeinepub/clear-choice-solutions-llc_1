@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update centralized marketing site contact info",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Update centralized CONTACT_CONFIG phone and email so header, footer, and Service Areas contact block reflect the new clickable tel/mailto values.",
+      "acceptanceCriteria": [
+        "`CONTACT_CONFIG.phone.display` shows the phone number as: \"703 864 3078\".",
+        "`CONTACT_CONFIG.phone.tel` is set to a tel:-friendly E.164 value for the same number: \"+17038643078\" so `getTelHref()` resolves to `tel:+17038643078`.",
+        "`CONTACT_CONFIG.email.address` is set to: \"solutionsclearchoice@gmail.com\" so `getMailtoHref()` resolves to `mailto:solutionsclearchoice@gmail.com`.",
+        "The updated phone number and email appear on the public marketing site anywhere `CONTACT_CONFIG` is rendered (including header, footer, and the Service Areas section contact block), with clickable tel: and mailto: links."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/config/contact.ts",
+          "operation": "modify",
+          "description": "Update CONTACT_CONFIG values to phone.display=\"703 864 3078\", phone.tel=\"+17038643078\", and email.address=\"solutionsclearchoice@gmail.com\" so all components importing CONTACT_CONFIG/getTelHref/getMailtoHref automatically render the updated contact details without hardcoding."
+        }
+      ]
+    }
+  ]
+}

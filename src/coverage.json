@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T14:53:34.548Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-12",
+        "summary": "Update the centralized contact configuration in `frontend/src/config/contact.ts` to use the correct phone number and email address provided by the user, so all places that read `CONTACT_CONFIG` (site header, footer, and Service Areas contact block) display and link to the updated values.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/config/contact.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/config/contact.ts"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/config/contact.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

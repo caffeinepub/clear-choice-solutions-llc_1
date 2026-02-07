@@ -1,0 +1,38 @@
+{
+  "kind": "build_request",
+  "title": "Update Clear Choice Solutions phone number and email",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Update the centralized contact configuration in `frontend/src/config/contact.ts` to use the correct phone number and email address provided by the user, so all places that read `CONTACT_CONFIG` (site header, footer, and Service Areas contact block) display and link to the updated values.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Please put the proper phone number and email address. \nNumber - 703 864 3078\nEmail - solutionsclearchoice@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`CONTACT_CONFIG.phone.display` shows the phone number as: \"703 864 3078\".",
+        "`CONTACT_CONFIG.phone.tel` is set to a tel:-friendly E.164 value for the same number: \"+17038643078\" so `getTelHref()` resolves to `tel:+17038643078`.",
+        "`CONTACT_CONFIG.email.address` is set to: \"solutionsclearchoice@gmail.com\" so `getMailtoHref()` resolves to `mailto:solutionsclearchoice@gmail.com`.",
+        "The updated phone number and email appear on the public marketing site anywhere `CONTACT_CONFIG` is rendered (including header, footer, and the Service Areas section contact block), with clickable tel: and mailto: links."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under `frontend/src/hooks/` listed as immutable in SYSTEM_CONTEXT.",
+    "Keep contact details centralized in `frontend/src/config/contact.ts` (do not hardcode phone/email into individual components)."
+  ],
+  "nonGoals": [
+    "Adding a new dedicated contact section or changing the site layout beyond updating the configured phone/email values.",
+    "Changing backend logic or CRM behavior."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

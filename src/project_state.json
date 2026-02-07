@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Build a clean, simple marketing site/app for Clear Choice Solutions LLC focused on generating 50+ commercial cleaning leads per week across DC/MD/VA, connecting with property management companies, and including a built-in CRM that auto-populates leads to manage opportunities.",
+  "architectural_notes": [
+    "Target market/region focus: commercial cleaning leads across DC/MD/VA",
+    "Include an integrated CRM component that captures and auto-populates inbound lead data",
+    "Use the official Clear Choice Solutions contact details throughout the site: Phone 703-864-3078, Email solutionsclearchoice@gmail.com"
+  ],
+  "known_issues": [
+    "User reports an error with the deployed app/build and requests it be fixed (details unspecified)."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-clean-responsive-marketing-site-for-clear-choice-solutions-llc-that-promotes-commercial-cleaning-services-across-washington-dc-maryland-and-virginia-and-is-oriented-toward-property-management-companies",
+      "title": "Create a clean, responsive marketing site for Clear Choice Solutions LLC that promotes commercial cleaning services across Washington DC, Maryland, and Virginia and is oriented toward property management companies.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-lead-generation-flow-with-a-prominent-lead-capture-form-that-creates-a-new-lead-opportunity-record-when-submitted-auto-populating-the-built-in-crm",
+      "title": "Implement a lead generation flow with a prominent lead capture form that creates a new lead/opportunity record when submitted (auto-populating the built-in CRM).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-built-in-crm-interface-to-manage-incoming-opportunities-including-a-leads-list-lead-detail-view-and-ability-to-update-status-stage-and-add-notes",
+      "title": "Build a built-in CRM interface to manage incoming opportunities, including a leads list, lead detail view, and ability to update status/stage and add notes.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-restrict-crm-access-to-authenticated-users-via-internet-identity-while-keeping-the-marketing-site-publicly-accessible",
+      "title": "Restrict CRM access to authenticated users via Internet Identity, while keeping the marketing site publicly accessible.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-suitable-for-a-commercial-cleaning-services-brand-distinct-modern-clean-using-consistent-typography-spacing-and-component-styling-across-the-marketing-site-and-crm",
+      "title": "Apply a coherent visual theme suitable for a commercial cleaning services brand (distinct, modern, clean), using consistent typography, spacing, and component styling across the marketing site and CRM.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-static-images-logo-hero-service-icons-as-generated-assets-and-use-them-on-the-marketing-site",
+      "title": "Add required static images (logo/hero/service icons) as generated assets and use them on the marketing site.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-deployed-app-error-by-preventing-protected-backend-calls-e-g-getcalleruserprofile-from-being-executed-when-the-visitor-is-not-authenticated-so-the-public-marketing-site-loads-without-triggering-backend-unauthorized-traps",
+      "title": "Fix the deployed app error by preventing protected backend calls (e.g., getCallerUserProfile) from being executed when the visitor is not authenticated, so the public marketing site loads without triggering backend \"Unauthorized\" traps.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-user-facing-error-handling-for-failed-backend-calls-including-canister-traps-and-network-agent-errors-in-the-crm-and-lead-capture-flows-using-clear-english-messages-and-avoiding-blank-screens",
+      "title": "Add user-facing error handling for failed backend calls (including canister traps and network/agent errors) in the CRM and lead-capture flows, using clear English messages and avoiding blank screens.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-single-centralized-frontend-configuration-for-clear-choice-solutions-contact-details-phone-number-and-email-so-they-can-be-updated-in-one-place-without-hunting-through-multiple-components",
+      "title": "Create a single, centralized frontend configuration for Clear Choice Solutions contact details (phone number and email) so they can be updated in one place without hunting through multiple components.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-configured-phone-number-and-email-prominently-on-the-public-marketing-site-with-clickable-actions-tel-and-mailto-in-the-header-and-footer-and-replace-the-placeholder-contact-info-in-the-service-areas-contact-block-with-the-configured-values",
+      "title": "Display the configured phone number and email prominently on the public marketing site with clickable actions (tel: and mailto:) in the header and footer, and replace the placeholder contact info in the Service Areas contact block with the configured values.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-centralized-contact-configuration-in-frontend-src-config-contact-ts-to-use-the-correct-phone-number-and-email-address-provided-by-the-user-so-all-places-that-read-contact-config-site-header-footer-and-service-areas-contact-block-display-and-link-to-the-updated-values",
+      "title": "Update the centralized contact configuration in `frontend/src/config/contact.ts` to use the correct phone number and email address provided by the user, so all places that read `CONTACT_CONFIG` (site header, footer, and Service Areas contact block) display and link to the updated values.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a clean sample marketing site/app to showcase Clear Choice Solutions LLC commercial cleaning services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Lead generation system targeting 50+ commercial cleaning leads/week across DC, Maryland, and Virginia",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Features/content to connect with property management companies (PM-focused messaging and outreach CTAs)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Built-in CRM to manage incoming opportunities with auto-populated lead details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Implement backend data models and APIs to store leads/opportunities and support CRM operations (create lead from form, list leads, get lead details, update lead status/notes).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add Clear Choice Solutions contact details (phone number and email) prominently on the marketing site (e.g., header/footer/contact section and CTAs)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Clear Choice Solutions LLC",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

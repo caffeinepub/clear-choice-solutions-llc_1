@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-centralized-contact-configuration-in-frontend-src-config-contact-ts-to-use-the-correct-phone-number-and-email-address-provided-by-the-user-so-all-places-that-read-contact-config-site-header-footer-and-service-areas-contact-block-display-and-link-to-the-updated-values",
+      "featureTitle": "Update the centralized contact configuration in `frontend/src/config/contact.ts` to use the correct phone number and email address provided by the user, so all places that read `CONTACT_CONFIG` (site header, footer, and Service Areas contact block) display and link to the updated values.",
+      "files": [
+        "frontend/src/config/contact.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
